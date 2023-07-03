@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="" type="text/css" >   
+    <link rel="stylesheet" href="css/main.css" type="text/css" >  
+    <link rel="stylesheet" href="css/FirstPageStyles.css" type="text/css" > 
+    
+    <!----Navbar css files---->
+	<link rel="stylesheet" type="text/css" href="css/ProductCategoryStyles.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--  Banner css files-->
+
+    <link rel="stylesheet" href="css/BannerStyle.css">
+
+	<!-- Image slideshow -->
+	<script>
+		var i = 0;  // Image start
+		var images = [];
+		var time = 1000;
+
+		// Image lsit
+		images[0] = "images/Slideshow pictures/clothes-advertisements.jpg";
+		images[1] = "images/Slideshow pictures/pexels-ivan-dark oboleninov-2816479.jpg";
+
+
+		//change image 
+		function ChangeImg(){
+			document.slide.src = images[i];
+
+			if( i < images.length - 1){
+				i++;
+			} else {
+				i = 0;
+			}
+
+			setTimeout("ChangeImg()", time);
+		}	 
+				
+			window.onload = changeImg;
+		</script>
+		
+
+
+
+</head>
+  	<!----header start--->
+
+	  <header>
+		<a href="#" class="logo">FunkyPrints</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="FirstPage.html">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="ProductRequest.html">Request A Product</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+		<div class="icons">
+			<a href="#"><i class='bx bx-search'></i></a>
+			<a href="LoginPage.php"><i class='bx bxs-user-circle' ></i></a>
+			<a href="ShoppingCart.php"><i class='bx bxs-shopping-bag' ></i></a>
+		</div>
+	</header>
+
+    <!-- Banner for the page -->
+    <br></br>
+    <br>
+
+    <div class="main-image">
+        <div class="containerBanner">
+            <h1><span>Your only merch shop</span></h1>
+            <span class="cen">The perfect geek store for fantasy enthusiast's in ceylon.</span>
+			<br>
+            <a class="button" href="ClothsPage.html">Shop Now</a>
+        </div>
+    </div>
+
+
+	<!-- Shop policies -->
+
+		<!--container--->
+		<section class="containerPolicy">
+		<div class="text">
+			<h1> Best Selling Franchises. </h1>
+		</div>
+
+		<div class="row-itemsPolicy">
+			<div class="containerPolicy-box">
+				<a href="Product2 - CityOfRicks .html">
+				<div class="containerPolicy-img">
+					<img src="images/Best selling/ssrco,active_tshirt,mens,101010_01c5ca27c6,front,square_three_quarter,1000x1000.u3.jpg">
+				</div>
+                  </a>
+				<h4>Rick & Morty</h4>
+				<p>Citadel of ricks</p>
+			</div>
+
+			<div class="containerPolicy-box">
+				<a href="Product1 - Batman2022.html" >
+				<div class="containerPolicy-img">
+					<img src="images/Best selling/ssrco,classic_tee,two_models,101010_01c5ca27c6,front,square_three_quarter,1000x1000.u1.jpg">
+				</div>
+				</a>
+				<h4>Batman</h4>
+				<p>Robert Pattinson..?</p>
+			</div>
+
+
+			<div class="containerPolicy-box">
+				<a href="Product5 - Scream.html">
+				<div class="containerPolicy-img">
+					<img src="images/Best selling/ra,womens_tshirt,x1900,fafafa_ca443f4786,front-c,140,125,1000,1000-bg,f8f8f8.jpg">
+				</div>
+                </a>
+				<h4>Scream</h4>
+				<p>What's your favorite scary movie?</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="containerPolicy">
+		<div class="text">
+			<h1> Product Gallery. </h1>
+		</div>
+</section>
+      <!-- Image gallery  -->
+      <section class="image-gallery">
+        <div class="row">
+          <div class="column">
+            <img src="images/ImageGallery/HomepagePageTile_Gifts_2022_Desktop.jfif" alt="" />
+            <img src="images/ImageGallery/HomepageTile_Hoodies_Desktop_2022.jfif" alt="" />
+            <img src="images/ImageGallery/HomepageTile_Posters_Desktop_2022.jfif" alt="" />
+            <img src="images/ImageGallery/HomepageTile_T-Shirts_Desktop_2022.jfif" alt="" />
+          </div>
+        </div>
+      </section>
+
+
+    	<!----contact start--->
+	<section class="contact" id="contact">
+		<div class="main-contact">
+			<div class="contact-content">
+				<li><a href="#shop">Shop</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a href="#faq">Faq</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Shipping & Returns</a></li>
+				<li><a href="#">Store Policy</a></li>
+				<li><a href="#">Payment Methods</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Tel: 071-6467248</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Pinterest</a></li>
+			</div>
+
+		</div>
+
+		<div class="action">
+			<form>
+				<input type="email" name="email" placeholder="Your Email" required>
+				<input type="submit" name="submit" value="Submit" required>
+			</form>
+		</div>
+	</section>
+
+	<div class="last">
+		<p>© 2022 By Kusal Jayashanka</p>
+	</div>

@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+/*BreadTalk icon styles */
+
+.Breadtalk{
+	padding-left:auto ;
+	padding-right: 700px;
+	align-items:absolute;
+	height: 80px;
+	width: auto;
+}
+
+/* Background of the Page */
+
+.containerLogin:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("css images/BgImage.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+  }
+
+
+  /* Navigation bar styles */
+
+header{
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	position: fixed;
+	background: white;
+	box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 8%;
+	transition: .3s;
+}
+.logo{
+	color: black;
+    padding-top: 10px;
+    padding-bottom: -5px;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 0.8;
+}
+
+.navbar{
+	display: flex;
+}
+.navbar a{
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+	padding: 0px 15px;
+	margin: 0 10px;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: white;
+	color:grey;
+}
+
+/* Button styles */
+.Mainbutton {
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+/* The main button */
+
+
+/* The hero image */
+.hero-image {
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  
+	/* Set a specific height */
+	height: 50%;
+  
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+  }
